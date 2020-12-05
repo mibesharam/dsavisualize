@@ -1,0 +1,29 @@
+section.container{
+    padding: 2rem;
+}
+
+
+
+ul{
+    list-style: none;
+    
+
+    & li.stack-item{
+        display: block;
+        width: 100px;
+        height: 50px;
+        display: grid;
+        place-content: center;
+        background-color: yellow;
+        margin: 1rem;
+        border-radius: 10px;
+        position: relative;
+        &:nth-child(1) .top{
+            position: absolute;
+            font-size: 1.4rem;
+            transform-origin: center;
+            top: 20%;
+            left: -80%;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <button mat-icon-button aria-label="Sidenav toggler" (click)="showSidenav=!showSidenav">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Data Structure Visualisation</span>
+</mat-toolbar>
+<mat-sidenav-container>
+
+    <mat-sidenav mode="over" [opened]="showSidenav">
+        <mat-list>
+            <mat-list-item (click)="onClickLink('')">
+                <mat-icon mat-list-icon>home</mat-icon>
+                <div mat-line>Home</div>
+            </mat-list-item>
+            <!-- data structure -->
+            <mat-divider></mat-divider>
+            <div mat-subheader>
+                <strong class="nav-title">Data Structure</strong>
+            </div>
+            <mat-list-item (click)="onClickLink('stack')">
+                <div mat-line>Stack</div>
+            </mat-list-item>
+            <mat-list-item (click)="onClickLink('queue')">
+                <div mat-line>Queue</div>
+            </mat-list-item>
+            <mat-list-item (click)="onClickLink('linked-list')">
+                <div mat-line>Linked List</div>
+            </mat-list-item>
+            <!-- algorithm -->
+            <mat-divider></mat-divider>
+            <div mat-subheader>
+                <strong class="nav-title">Algorithm</strong>
+            </div>
+            <mat-list-item (click)="onClickLink('binary-sorting')">
+                <div mat-line>Binary Sorting</div>
+            </mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,20 @@
+@import "../../../variables.scss";
+
+mat-sidenav {
+    width: 280px;
+}
+mat-sidenav-container{
+    min-height: 90%;
+}
+
+a{
+    text-decoration: none;
+}
+mat-list-item:hover{
+    background-color: $grey-1;
+    cursor: pointer;
+}
+.nav-title{
+    color: $primary;
+}
+
