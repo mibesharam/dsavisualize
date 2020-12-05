@@ -1,15 +1,1 @@
-<section class="container">
-    <ul class="stack-wrapper">
-
-        <li *ngFor="let item of stack; index as i" [id]="i" (@stackAnim.start)="showTop=false"
-            (@stackAnim.done)="showTop=true" [@stackAnim]="stack" [key]="item.key" class="stack-item">
-            <span class="top" *ngIf="i==0 && showTop">Top 👉</span>
-            {{item.value}}
-        </li>
-    </ul>
-</section>
-<section>
-    <input type="number" step="1" min="0" max="10" [(ngModel)]="item" name="item">
-    <button (click)="onClickPop()">pop</button>
-    <button (click)="onClickPush()">push</button>
-</section>
+<p>Home works</p>

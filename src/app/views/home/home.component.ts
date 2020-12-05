@@ -39,31 +39,10 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   ]
 })
 export class HomeComponent implements OnInit {
-  key: number = 0;
-  isOpen: boolean = false;
-  showTop: boolean;
-  constructor() { }
-  item: number = 0;
-  stack: any[] = [];
+
 
   ngOnInit(): void {
   }
 
-
-  toggle() {
-    this.isOpen = !this.isOpen;
-  }
-
-  onClickPop() {
-
-    if (this.stack.length > 0) {
-      this.showTop = false;
-      this.stack.splice(0, 1);
-    }
-  }
-  onClickPush() {
-    this.key += 1;
-    this.stack.splice(0, 0, { value: this.item, key: this.key });
-  }
 
 }
