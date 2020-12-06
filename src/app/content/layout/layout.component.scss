@@ -1,5 +1,7 @@
 @import "../../../variables.scss";
-
+mat-toolbar{
+    z-index: 100;
+}
 mat-sidenav {
     width: 280px;
 }
@@ -14,4 +16,8 @@ mat-list-item:hover{
 .nav-title{
     color: $primary;
 }
+mat-sidenav-content{
+    position: relative;
+}
+
 

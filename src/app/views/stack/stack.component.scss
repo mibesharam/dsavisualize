@@ -1,26 +1,18 @@
 @import "/src/variables.scss";
 
-section.container{
-    padding: 2rem;
-}
-
 .aside-menu{
     border-left: 1px solid $grey-1;
 }
 
-
-
 ul{
     list-style: none;
-    
-
     & li.stack-item{
         display: block;
-        width: 100px;
-        height: 50px;
+        width: 200px;
+        height: 30px;
         display: grid;
         place-content: center;
-        background-color: yellow;
+        background-color: $accent;
         margin: 1rem;
         border-radius: 10px;
         position: relative;
@@ -33,3 +25,21 @@ ul{
         }
     }
 }
+
+div.logs-wrapper{
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: $grey-1;
+    min-height: 10rem;
+    font-size: 0.8rem;
+}
+
+div.my-canvas-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey-1;
+}
+
+
